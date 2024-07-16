@@ -1,4 +1,11 @@
-import { Flex, Image, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import {
+  Flex,
+  Image,
+  Heading,
+  Text,
+  useMediaQuery,
+  Link,
+} from "@chakra-ui/react";
 import "@fontsource/turret-road/800.css";
 
 export default function Hero() {
@@ -20,7 +27,7 @@ export default function Hero() {
         />
         <Flex
           direction={"column"}
-          h="60vh"
+          h="55vh"
           w={isLargerThanMd ? "38%" : "100%"}
           p={isLargerThanMd ? 10 : 30}
           gap={3}
@@ -30,20 +37,28 @@ export default function Hero() {
           pt={"12%"}
         >
           <Heading
+            as="h1"
             color={"#FF006B"}
             fontFamily={"Turret Road"}
             size={"3xl"}
             textAlign={!isLargerThanMd ? "center" : "initial"}
           >
-            You Are Not Bullish Enough Anon
+            You Are Not Bullish Enough Anon 🐂
           </Heading>
           <Text
             color="white"
             fontFamily={"Turret Road"}
-            fontSize={"36px"}
+            fontSize={"32px"}
             textAlign={!isLargerThanMd ? "center" : "initial"}
           >
-            Coming Soon...
+            Memecoins Are Coming To{" "}
+            <Link
+              href="https://minaprotocol.com"
+              _hover={{ textDecoration: "none" }}
+            >
+              Mina Protocol
+            </Link>
+            . Soon...
           </Text>
         </Flex>
       </Flex>
