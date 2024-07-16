@@ -15,12 +15,12 @@ export default function Hero() {
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
           w={isLargerThanMd ? "100%" : ""}
-          h={"100vh"}
+          h={"90vh"}
           alt="bg"
         />
         <Flex
           direction={"column"}
-          h="70vh"
+          h="60vh"
           w={isLargerThanMd ? "38%" : "100%"}
           p={isLargerThanMd ? 10 : 30}
           gap={3}
